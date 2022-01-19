@@ -15,7 +15,7 @@ function App() {
   }, []);
 
   const addBooking = (booking) => {
-    postBooking(booking).then(newBooking => setGuestBookings([...guestBookings].push(newBooking)));
+    postBooking(booking).then(newBooking => setGuestBookings([...guestBookings, newBooking]));
       }
 
   const deleteBooking = (id) => {

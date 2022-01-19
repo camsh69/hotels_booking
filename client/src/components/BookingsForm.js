@@ -16,9 +16,6 @@ const BookingsForm = ({addBooking}) => {
         setEmail(event.target.value)
     }
 
-    //  on submit
-    // preventDefault
-    //  set checked in state to true
 
     const handleSubmit = event => {
         event.preventDefault();
@@ -38,20 +35,14 @@ const BookingsForm = ({addBooking}) => {
         setEmail("");
         setCheckedIn(false)
     }   
-    
-//  create booking obj 
-// pass obj to addBooking
-// set states back to default
-
-
-    
+        
 
     return (
     <>
         <form onSubmit={handleSubmit}>
         <h2>Add a booking: </h2>
-            <input onChange={onNameChange} type="text" placeholder="Name"/>
-            <input onChange={onEmailChange}  type="email" placeholder="Email"/>
+            <input onChange={onNameChange} value={name} type="text" placeholder="Name"/>
+            <input onChange={onEmailChange} value={email} type="email" placeholder="Email"/>
             <input type="submit" value="Check In"/>
 
         </form>
