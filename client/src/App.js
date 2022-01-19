@@ -20,9 +20,7 @@ function App() {
 
   const deleteBooking = (id) => {
     apiDeleteBooking(id).then(() => {
-      const temp = [...guestBookings].filter(booking => {
-        !booking._id === id
-      })
+      const temp = [...guestBookings].filter(booking => booking._id !== id)
       setGuestBookings(temp);
     })
   }

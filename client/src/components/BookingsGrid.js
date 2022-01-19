@@ -9,8 +9,7 @@ const BookingsGrid = ({guestBookings, deleteBooking}) => {
 
     return (
         <>
-        <h2>BookingsGrid</h2>
-         {bookingList}
+        <ul> {bookingList}</ul>
         </>
     )
 }
