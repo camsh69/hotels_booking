@@ -4,7 +4,7 @@ const BookingsForm = () => {
 
     return (
     <>
-        <h3> BookingsForm</h3>
+        <h3> BookingsForm </h3>
     </>
     )
 }
